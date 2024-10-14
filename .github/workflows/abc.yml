@@ -20,7 +20,7 @@ jobs:
     steps: 
       - name: step1
         run: eho "Hello, Commit happened successfully"
-        continue-on-error: true
+        #continue-on-error: true
       - name: step2
         run: |
           echo "step2"

@@ -34,6 +34,7 @@ jobs:
           id
   job2: 
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
     steps: 
       - name: step1
         run: echo "Hello, from job2, step1"

@@ -3,10 +3,14 @@
 name: myPipeline
 
 # Controls when the workflow will run
-on:
-  push:
-      branches: 
-        - main
+on: 
+  pull_request: 
+    branches:
+      - main
+  push: 
+    branches:
+      - main
+      - dev
   # Triggers the workflow on push or pull request events but only for the "main" branch
   # push:
   #   branches: [ "main" ]
